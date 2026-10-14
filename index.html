@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portofolio Claudya</title>
+<link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">LOGO / Nama</div>
+    <div class="nav-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+      <button onclick="alert('Pilih tema apa?')">Tema</button>
+    </div>
+  </div>
+</header>
+
+<section id="beranda" class="hero">
+  <div class="hero-text">
+    <h1>Halo, Saya Claudya Chantika Tampubolon</h1>
+    <p>Saya adalah designer yang berfokus pada desain grafis dan pengalaman pengguna.</p>
+    <div>
+      <a href="#proyek" class="btn">Lihat Proyek</a>
+      <a href="#kontak" class="btn">Hubungi</a>
+    </div>
+  </div>
+  <div class="hero-img">FOTO / ILUSTRASI </div>
+</section>
+
+<section id="keahlian" class="section">
+  <h2>Keahlian</h2>
+  <div class="chips-flex">
+    <span class="chip">Canva</span>
+    <span class="chip">Adobe Illustrator</span>
+    <span class="chip">Figma</span>
+  </div>
+</section>
+
+<section id="proyek" class="section">
+  <h2>Proyek</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-img">GAMBAR</div>
+      <h3>Poster Festra</h3>
+      <p>Poster ini digunakan untuk perlombaan poster infografis.</p>
+    </div>
+    <div class="card">
+      <div class="card-img">GAMBAR</div>
+      <h3>Undangan Pernikahan</h3>
+      <p>Undangan ini guna untuk penilaian mata kuliah DPW.</p>
+    </div>
+    <div class="card">
+      <div class="card-img">GAMBAR</div>
+      <h3>Poster Publik</h3>
+      <p>Poster ini digunakan untuk kampanye publik.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontak" class="section contact-grid">
+  <div>
+    <h2>Kontak</h2>
+    <p>Hubungi saya melalui pesan di samping atau tautan sosial media berikut.</p>
+    <p>Email - Instagram</p>
+  </div>
+  <div>
+    <form id="myForm" onsubmit="kirimPesan(event)">
+      <input type="text" id="nama" placeholder="Nama" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <textarea id="pesan" placeholder="Pesan" required></textarea><br>
+      <button type="submit" class="btn">Kirim</button>
+      <span id="notif"></span>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; Praktikum Desain Pemrograman Web </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
